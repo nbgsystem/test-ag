@@ -1,0 +1,85 @@
+.app-loader {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .game-logo {
+        width: 400px;
+    }
+
+    .loader {
+        position: relative;
+        width: 200px;
+        height: 30px;
+        font-size: 16px;
+        background: #fff;
+        border-radius: 5px;
+        overflow: hidden;
+        width: 500px;
+        margin-top: 40px;
+
+        .percentage {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background: #3de68d;
+            height: 100%;
+        }
+
+        .text {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #000;
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+}
+
+.game {
+    .wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+
+        .navigation {
+            margin: 25px 0;
+
+            button{
+                padding: 5px 15px;
+                margin: 0 5px;
+                cursor: pointer;
+
+                &.selected{
+                    background: #3de68d;
+                    color: #fff;
+                    border: none;
+                }
+            }
+        }
+    }
+
+    #pixiGameContainer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    &-logo {
+        height: 60px;
+    }
+}
